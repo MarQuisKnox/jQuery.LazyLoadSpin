@@ -520,8 +520,9 @@ $('#el').spin('flower', 'red');
         }
 
         this.each(function() {
-            var self = this;
-            var $self = $(self);
+            var self    = this;
+            var $self   = $(self);
+            var isImage = false;
             
             if( settings.spinner ) {
                 $self.spin( settings.spinner_options );            	
@@ -532,7 +533,16 @@ $('#el').spin('flower', 'red');
             /* If no src attribute given use data:uri. */
             if ($self.attr("src") === undefined || $self.attr("src") === false) {
                 if ($self.is("img")) {
+                    isImage = true;
                     $self.attr("src", settings.placeholder);
+                    
+                    if( settings.spinner ) {
+                      $self.parent().spin( settings.spinner_options );            	
+                    }
+                } else {
+                    if( settings.spinner ) {
+                      $self.spin( settings.spinner_options );            	
+                    }                  
                 }
             }
 
@@ -555,9 +565,15 @@ $('#el').spin('flower', 'red');
                             }
                             $self[settings.effect](settings.effect_speed);
 
-                            if( settings.spinner ) {
-                            	$self.spin( false );
-                            }	
+                            if( isImage ) {
+                              if( settings.spinner ) {
+                            	  $self.parent().spin( false );
+                              }                             
+                            } else {
+                              if( settings.spinner ) {
+                              	$self.spin( false );
+                              }                              
+                            }
                             	
                             self.loaded = true;
 
