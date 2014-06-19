@@ -1,1 +1,30 @@
-Temp...
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery Lazy Load Spin &mdash; jQuery Lazy Load + spin.js</title>
+  </head>    
+  <body>
+    <div id="bodyMain">
+      <div>
+        <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-original="http://imgsv.imaging.nikon.com/lineup/dslr/d90/img/sample/pic_001b.jpg">  
+      </div>
+      <div>
+        <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-original="http://imaging.nikon.com/lineup/dslr/d90/img/sample/pic_003b.jpg">
+      </div>
+      <div>
+        <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-original="http://imaging.nikon.com/lineup/dslr/d90/img/sample/pic_004b.jpg">  
+      </div>
+      <div>
+        <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-original="http://imaging.nikon.com/lineup/dslr/d90/img/sample/pic_005b.jpg">
+      </div>  
+    </div>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="https://raw.githubusercontent.com/MarQuisKnox/jQuery_LazyLoad_Spin/gh-pages/jquery.lazyload.spin.min.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        $('.lazy').lazyload();     
+      });      
+    </script>
+    
+  </body>
+</html>
