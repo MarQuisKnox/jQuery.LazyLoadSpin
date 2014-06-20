@@ -523,11 +523,6 @@ $('#el').spin('flower', 'red');
             var self    = this;
             var $self   = $(self);
             var isImage = false;
-            
-            if( settings.spinner ) {
-                $self.spin( settings.spinner_options );            	
-            }
-
             self.loaded = false;
 
             /* If no src attribute given use data:uri. */
