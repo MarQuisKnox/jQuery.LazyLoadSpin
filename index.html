@@ -1,21 +1,155 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>jQuery Lazy Load Spin &mdash; jQuery Lazy Load + spin.js</title>
-  </head>    
-  <body>
-    <div id="bodyMain">
-      <div style="height: 223px; width: 336px;">
-        <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-original="http://imaging.nikon.com/lineup/dslr/d7000/img/sample/img_01.png">  
-      </div>
-    </div>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="https://raw.githubusercontent.com/MarQuisKnox/jQuery_LazyLoad_Spin/gh-pages/jquery.lazyload.spin.js?v=1.0"></script>
-    <script type="text/javascript">
-      $(function() {
-        $('.lazy').lazyload();     
-      });      
-    </script>
+	<head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta name="description" content="">
+	    <meta name="author" content="">
+	
+	    <title>Demo &mdash; jQuery.LazyLoadSpin</title>
+	    
+        <!-- Bootstrap Core CSS -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	
+	    <!-- Custom CSS -->
+	    <link href="css/4-col-portfolio.css" rel="stylesheet">
+	    <link href="css/lazyload.css" rel="stylesheet">
+	
+	    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+	        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+	
+	</head>
+
+	<body>	
+	    <!-- Page Content -->
+	    <div class="container">
+	
+	        <!-- Page Heading -->
+	        <div class="row">
+	            <div class="col-lg-12">
+	                <h1 class="page-header">jQuery.LazyLoadSpin
+	                    <small>Demo</small>
+	                </h1>
+	            </div>
+	        </div>
+	        <!-- /.row -->
+	
+	        <!-- Projects Row -->
+	        <div class="row">
+	            <div class="col-md-3 portfolio-item">
+	                <a href="images/original.jpg" target="_blank">
+	                    <img class="lazy lazyFourCols img-responsive" data-href="#" data-original="images/original.jpg" alt="">
+	                </a>
+	            </div>
+	            <div class="col-md-3 portfolio-item">
+	                <a href="images/14H.jpg" target="_blank">
+	                    <img class="lazy lazyFourCols img-responsive" data-href="#" data-original="images/14H.jpg" alt="">
+	                </a>
+	            </div>
+	            <div class="col-md-3 portfolio-item">
+	                <a href="images/113H.jpg" target="_blank">
+	                    <img class="lazy lazyFourCols img-responsive" data-href="#" data-original="images/113H.jpg" alt="">
+	                </a>
+	            </div>
+	            <div class="col-md-3 portfolio-item">
+	                <a href="images/152H.jpg" target="_blank">
+	                    <img class="lazy lazyFourCols img-responsive" data-href="#" data-original="images/152H.jpg" alt="">
+	                </a>
+	            </div>
+	        </div>
+	        <!-- /.row -->
+	
+	        <!-- Projects Row -->
+	        <div class="row">
+	            <div class="col-md-3 portfolio-item">
+	                <a href="images/image-23.jpg" target="_blank">
+	                    <img class="lazy lazyFourCols img-responsive" data-href="#" data-original="images/image-23.jpg" alt="">
+	                </a>
+	            </div>
+	            <div class="col-md-3 portfolio-item">
+	                <a href="images/image-32.jpg" target="_blank">
+	                    <img class="lazy lazyFourCols img-responsive" data-href="#" data-original="images/image-32.jpg" alt="">
+	                </a>
+	            </div>
+	            <div class="col-md-3 portfolio-item">
+	                <a href="images/image-51.jpg" target="_blank">
+	                    <img class="lazy lazyFourCols img-responsive" data-href="#" data-original="images/image-51.jpg" alt="">
+	                </a>
+	            </div>
+	            <div class="col-md-3 portfolio-item">
+	                <a href="images/image-52.jpg" target="_blank">
+	                    <img class="lazy lazyFourCols img-responsive" data-href="#" data-original="images/image-52.jpg" alt="">
+	                </a>
+	            </div>
+	        </div>
+	        <!-- /.row -->
+	
+	        <!-- Projects Row -->
+	        <div class="row">
+	            <div class="col-md-3 portfolio-item">
+	                <a href="images/image-91.jpg" target="_blank">
+	                    <img class="lazy lazyFourCols img-responsive" data-href="#" data-original="images/image-91.jpg" alt="">
+	                </a>
+	            </div>
+	            <div class="col-md-3 portfolio-item">
+	                <a href="images/unsplash_52d9133506548_1.jpg" target="_blank">
+	                    <img class="lazy lazyFourCols img-responsive" data-href="#" data-original="images/unsplash_52d9133506548_1.jpg" alt="">
+	                </a>
+	            </div>
+	            <div class="col-md-3 portfolio-item">
+	                <a href="images/l1080022.jpg" target="_blank">
+	                    <img class="lazy lazyFourCols img-responsive" data-href="#" data-original="images/l1080022.jpg" alt="">
+	                </a>
+	            </div>
+	            <div class="col-md-3 portfolio-item">
+	                <a href="images/144H.jpg" target="_blank">
+	                    <img class="lazy lazyFourCols img-responsive" data-href="#" data-original="images/144H.jpg" alt="">
+	                </a>
+	            </div>
+	        </div>
+	        <!-- /.row -->
+	
+	        <hr>
+	
+	        <!-- Footer -->
+	        <footer>
+	            <div class="row">
+	                <div class="col-lg-12">
+	                    <p>&copy; Copyright 2014 - 2015 Your Website</p>
+	                </div>
+	            </div>
+	            <!-- /.row -->
+	        </footer>
+	
+	    </div>
+	    <!-- /.container -->
+
+        <!-- jQuery -->
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.lazyload.spin.js"></script>
     
-  </body>
+        <!-- Bootstrap Core JavaScript -->
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>    
+
+        <script  type="text/javascript">
+            $(function() {
+                $('.lazy').lazyload({
+                    spinner_options: {
+                        top: '50%'
+                    }
+                });
+            });     
+        </script> 
+        
+        <a href="https://github.com/MarQuisKnox/jQuery.LazyLoadSpin" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
+
+    </body>
 </html>
